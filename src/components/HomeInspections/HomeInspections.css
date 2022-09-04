@@ -1,0 +1,26 @@
+.inspectHome {
+    background-color: black;
+}
+
+.homeInspectionAnt {
+    width: 327px;
+    height: 450px;
+}
+
+.bigAnt {
+    width: 653px;
+    height: 900px;
+    /* padding-right: 250px; */
+}
+
+.homeInspectBody {
+    background-color: #FBB040;
+    padding-top: 50px;
+}
+
+.contactInfo {
+padding-top: 25px;
+color: black;
+
+
+}
