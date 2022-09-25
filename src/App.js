@@ -1,85 +1,73 @@
-import './App.css';
-import { motion } from "framer-motion";
-import { Grid, Row, Col } from 'rsuite';
 import { useState } from 'react'
-import HomeInspections from './components/HomeInspections/HomeInspections';
+import { Nav, Navbar } from 'rsuite';
+import './App.css';
+import CertsModal from './components/CertsModal/CertsModal';
+
 
 
 
 function App() {
-  const variants = {
-    hidden: {
-      opacity: 0,
-      x: 100,
-      y: 100,
-    },
-    show: {
-      opacity: 1,
-      x: 100,
-      y: 100,
-      transition: {
-        duration: 5,
+  const [size, setSize] = useState();
 
-      }
-    }
-  }
+  const [openCertsModal, setOpenCertsModal] = useState(false);
+  const handleOpenCertsModal = value => {
+    setSize(value);
+    setOpenCertsModal(true);
+  };
+  const handleCloseCertsModal = () => setOpenCertsModal(false);
 
-  const [homeInspection, setHomeInspection] = useState(false)
-  const handleSetHomeInspection = () => {
-    setHomeInspection(true)
-  }
-
-  const handleSetCloseHomeInspection = () => {
-    setHomeInspection(false)
-  }
 
   return (
+    <div>
     <div className="App">
-      {!homeInspection ?
-        <motion.div
-          variants={variants}
-          initial="hidden"
-          animate="show">
-      
-            
-          
-          <div className="panels">
-            
-            <Grid fluid>
-              <Row>
-                  <Col>
-                    <div className="homeInspection" >
-                      <button onClick={handleSetHomeInspection} className="homeInspectionsHome" shaded bordered bodyFill style={{ width: 300, height: 150 }}>
-                        Go to Home Inspections
-                      </button>
-                    </div>
-                  </Col>
-                  <Col>
-                  <img className="standingAnt" src="standingAnt.png" alt="" />
-                  </Col>
-                  <Col>
-                    <div className="craneInspection">
-                      <button className="getQuote" shaded bordered bodyFill style={{ width: 300, height: 150 }}>
-                        Go to Crane Inspections
-                      </button>
-                    </div>
-                  </Col>
-              </Row>
-            </Grid>
-                
+      <div className="inspectHome">
+        <center>
+          <img className="homeInspectionAnt" src="standingAnt.png" alt="" />
+        </center>
+      </div>
+      <Navbar className="navbar">
+        {/* <Navbar.Brand href="#">Ant's Inspections Home</Navbar.Brand> */}
+        <Nav>
+          <Nav.Item>Get A Quote!</Nav.Item>
+          <Nav.Item>Testimonials</Nav.Item>
+          <Nav.Item>Flying Ant Drone (Coming Soon!)</Nav.Item>
+          <Nav.Menu title="About">
+            <Nav.Item>Us</Nav.Item>
+            <Nav.Item onClick={() => handleOpenCertsModal('full')}>Our Certifications</Nav.Item>
+            <Nav.Item>Contact</Nav.Item>
+            <Nav.Menu title="Our Services">
+              <Nav.Item>Service 1</Nav.Item>
+              <Nav.Item>Service 2</Nav.Item>
+            </Nav.Menu>
+          </Nav.Menu>
+        </Nav>
+        <Nav pullRight>
+
+        </Nav>
+      </Navbar>
+      <div className="homeInspectBody">
+        <center>
+          <h1>Our site is under construction but we're not!</h1>
+          <h1>Contact us now for all of your home inspection needs!</h1>
+          <div className="contactInfo">
+            <h2><b>Phone:</b> 770-282-1566</h2>
+            <h2><b>Email:</b> tracy@antsinspections.com</h2>
           </div>
-        </motion.div>
-        : null}
 
-
-
-      {homeInspection ?
-        <HomeInspections
-        handleSetCloseHomeInspection={handleSetCloseHomeInspection}
-        />
-        : null}
+          <img className="bigAnt" src="centerAnt.png" alt="" />
+        </center>
+      </div>
     </div >
+
+<CertsModal
+  size={size}
+  openCertsModal={openCertsModal}
+  handleCloseCertsModal={handleCloseCertsModal}
+
+/>
+</div>
   );
+
 }
 
 export default App;
