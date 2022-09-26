@@ -4,6 +4,7 @@ import './App.css';
 import AboutUsModal from './components/AboutUsModal/AboutUsModal';
 import CertsModal from './components/CertsModal/CertsModal';
 import RequestModal from './components/RequestModal/RequestModal';
+import ServicesModal from './components/ServicesModal/ServicesModal';
 
 
 
@@ -31,7 +32,16 @@ function App() {
     setSize(value);
     setOpenAboutUsModal(true);
   };
+
   const handleCloseAboutUsModal = () => setOpenAboutUsModal(false);
+
+
+  const [openServicesModal, setOpenServicesModal] = useState(false);
+  const handleOpenServicesModal = value => {
+    setSize(value);
+    setOpenServicesModal(true);
+  };
+  const handleCloseServicesModal = () => setOpenServicesModal(false);
   
 
   return (
@@ -51,7 +61,7 @@ function App() {
             <Nav.Menu title="About">
               <Nav.Item onClick={() => handleOpenAboutUsModal('lg')} >Us</Nav.Item>
               <Nav.Item onClick={() => handleOpenCertsModal('full')}>Our Certifications</Nav.Item>
-              <Nav.Item>Our Services</Nav.Item>
+              <Nav.Item onClick={() => handleOpenServicesModal('full')}>Our Services</Nav.Item>
               <Nav.Menu title="Contact">
                 <Nav.Item><h2><b>Phone:</b> 770-282-1566</h2></Nav.Item>
                 <Nav.Item><h2><b>Email:</b> tracy@antsinspections.com</h2></Nav.Item>
@@ -90,6 +100,12 @@ function App() {
       size={size}
       openAboutUsModal={openAboutUsModal}
       handleCloseAboutUsModal={handleCloseAboutUsModal}
+      />
+
+      <ServicesModal 
+      size={size}
+      openServicesModal={openServicesModal}
+      handleCloseServicesModal={handleCloseServicesModal}
       />
     </div>
   );
