@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Grid, Row, Col } from 'rsuite';
+import { Modal } from 'rsuite';
 import ModalBody from 'rsuite/esm/Modal/ModalBody';
 import './CertsModal.css';
 
