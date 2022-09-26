@@ -56,7 +56,7 @@ function App() {
         <div className="homeInspectBody">
           <center>
             <div className="contactInfo">
-              <Button target="_blank" rel="noreferrer" href="https://app.spectora.com/home-inspectors/my-inspection-company-a517d4e8a0/sample_report?sample_id=16485" appearance="link"><h4 className="reportSample">Click Here to See A Sample Same Day Inspection Report</h4></Button>
+              <Button target="_blank" rel="noreferrer" href="https://app.spectora.com/home-inspectors/my-inspection-company-a517d4e8a0/sample_report?sample_id=16485" appearance="link"><h4 className="reportSample">Click Here to See A Sample Same Day Inspection Report!</h4></Button>
               {/* <h2><b>Phone:</b> 770-282-1566</h2>
               <h2><b>Email:</b> tracy@antsinspections.com</h2> */}
             </div>
