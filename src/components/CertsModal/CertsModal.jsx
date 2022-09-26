@@ -1,6 +1,5 @@
 import React from 'react';
 import { Modal } from 'rsuite';
-import ModalBody from 'rsuite/esm/Modal/ModalBody';
 import './CertsModal.css';
 
 export default function CertsModal({
