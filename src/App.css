@@ -15,7 +15,7 @@
 
 .homeInspectBody {
   background-color: #FBB040;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .contactInfo {
@@ -27,4 +27,9 @@ color: black;
 
 .reportSample {
   color: black;
+}
+
+.modalAnt {
+  height: 750px;
+  width: 375px;
 }

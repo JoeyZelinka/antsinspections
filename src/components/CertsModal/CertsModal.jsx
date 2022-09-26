@@ -13,7 +13,7 @@ export default function CertsModal({
     return (
         <div>
             <Modal size={size} open={openCertsModal} onClose={handleCloseCertsModal}>
-                <ModalBody>
+                <Modal.Body>
 
 
                     <center>
@@ -30,7 +30,7 @@ export default function CertsModal({
                         </p>
                     </center>
 
-                </ModalBody>
+                </Modal.Body>
             </Modal>
         </div>
     )
