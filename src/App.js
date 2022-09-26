@@ -51,10 +51,10 @@ function App() {
             <Nav.Menu title="About">
               <Nav.Item onClick={() => handleOpenAboutUsModal('lg')} >Us</Nav.Item>
               <Nav.Item onClick={() => handleOpenCertsModal('full')}>Our Certifications</Nav.Item>
-              <Nav.Item>Contact</Nav.Item>
-              <Nav.Menu title="Our Services">
-                <Nav.Item>Service 1</Nav.Item>
-                <Nav.Item>Service 2</Nav.Item>
+              <Nav.Item>Our Services</Nav.Item>
+              <Nav.Menu title="Contact">
+                <Nav.Item><h2><b>Phone:</b> 770-282-1566</h2></Nav.Item>
+                <Nav.Item><h2><b>Email:</b> tracy@antsinspections.com</h2></Nav.Item>
               </Nav.Menu>
             </Nav.Menu>
           </Nav>
@@ -66,8 +66,7 @@ function App() {
           <center>
             <div className="contactInfo">
               <Button target="_blank" rel="noreferrer" href="https://app.spectora.com/home-inspectors/my-inspection-company-a517d4e8a0/sample_report?sample_id=16485" appearance="link"><h4 className="reportSample">Click Here to See a Sample Same Day Inspection Report!</h4></Button>
-              {/* <h2><b>Phone:</b> 770-282-1566</h2>
-              <h2><b>Email:</b> tracy@antsinspections.com</h2> */}
+              
             </div>
 
             <img className="bigAnt" src="standingAnt.png" alt="" />
