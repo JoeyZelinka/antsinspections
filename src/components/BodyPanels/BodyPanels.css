@@ -1,0 +1,43 @@
+.bodyPanels {
+    color: black;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.techPanel {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.techStatement {
+    padding-bottom: 15px;
+}
+
+.inspectorPanel {
+    background-color: white;
+}
+
+.infrared {
+    padding-top: 25px;
+}
+
+.anthony {
+    height: 300px;
+    width: 300px;
+    padding-top: 20px;
+    
+}
+
+.bio {
+    padding-top: 20px;
+}
+
+.reviews1 {
+    padding-top: 25px;
+} 
+
+.testHeader {
+    padding-top: 25px;
+}
+
