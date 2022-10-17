@@ -19,7 +19,7 @@ export default function BodyPanels() {
                     <Row>
 
                         <Col xs={24} sm={24} md={8}>
-                            <Panel shaded className="techPanel" style={{ width: 400 }} bodyfill>
+                            <Panel shaded className="techPanel" style={{ width: 350 }} bodyfill>
                                 <h2>Technology</h2>
                                 <p className="techStatement"><b>Ant’s Inspections uses top of the line technology to thoroughly assess your home and, in some cases, detect concerning issues not visible to the naked eye. A list of some of the devices we bring to each inspection include:</b></p>
                                 <li>DJI Mini Pro 3 Drone</li>
@@ -40,7 +40,7 @@ export default function BodyPanels() {
                         {/* <Col xs={3}><Divider vertical style={{ height: 700 }} /></Col> */}
 
                         <Col xs={24} sm={24} md={8}>
-                            <Panel shaded className="inspectorPanel" bordered style={{ width: 400 }} bodyfill>
+                            <Panel shaded className="inspectorPanel" bordered style={{ width: 350 }} bodyfill>
                                 <h2>Meet Your Inspector</h2>
                                 <Whisper placement="top" trigger="hover" controlId="control-id-hover" speaker={speaker}>
                                     <img className="anthony" src="anthony.png" alt="" />
@@ -52,7 +52,7 @@ export default function BodyPanels() {
 
 
                         <Col xs={24} sm={24} md={8}>
-                            <Panel shaded className="techPanel" style={{ width: 400 }} bodyfill>
+                            <Panel shaded className="techPanel" style={{ width: 350 }} bodyfill>
                                 <h2>Reviews & Testimonials</h2>
                                 <img className="reviews1" src="reviews.png" alt="" />
                                 <p className="testHeader"><h3>Linda R says</h3></p>

@@ -47,9 +47,9 @@ function App() {
           <Grid fluid>
             <Row gutter={16}>
               <center>
-                <Col xs={8}><h4>* Home Inspections  *</h4></Col>
-                <Col xs={8}><h4>* Crane Inspections *</h4></Col>
-                <Col xs={8}><h4>* Commercial Inspections  *</h4></Col>
+                <Col xs={24} sm={24} md={8}><h4>*Home Inspections*</h4></Col>
+                <Col xs={24} sm={24} md={8}><h4>*Crane Inspections*</h4></Col>
+                <Col xs={24} sm={24} md={8}><h4>*Commercial Inspections*</h4></Col>
               </center>
             </Row>
 
