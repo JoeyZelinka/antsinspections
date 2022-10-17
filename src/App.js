@@ -53,7 +53,7 @@ function App() {
               </center>
             </Row>
 
-            <center><button className="reportSample" target="_blank" rel="noreferrer" href="https://app.spectora.com/home-inspectors/my-inspection-company-a517d4e8a0/sample_report?sample_id=16485" appearance="link"><h4>Click Here to See a Sample Same Day Inspection Report!</h4></button></center>
+            <center><a className="reportSample" target="_blank" rel="noreferrer" href="https://app.spectora.com/home-inspectors/my-inspection-company-a517d4e8a0/sample_report?sample_id=16485" appearance="link"><h4>Click Here to See a Sample Same Day Inspection Report!</h4></a></center>
           </Grid>
         </Panel>
 
