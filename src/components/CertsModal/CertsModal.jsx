@@ -1,5 +1,5 @@
 import React from 'react';
-import { Panel } from 'rsuite';
+import { Col, Grid, Panel, Row } from 'rsuite';
 import './CertsModal.css';
 
 export default function CertsModal() {
@@ -7,7 +7,7 @@ export default function CertsModal() {
         <div className="certs">
             <Panel>
                 <Panel>
-                <center>
+                    <center>
                         <p>
                             <h1>Our Services</h1>
                             <h3>For a thorough, visual inspection including:</h3>
@@ -33,22 +33,32 @@ export default function CertsModal() {
                             <li>Homes over 50 years old= $50 up-charge</li>
                             <li>Homes with a crawl space = $50 up-charge</li>
                         </p>
-                        
+
                     </center>
 
-                    <center className="certImg">
-                        <p><a href="https://www.nachi.org/verify?nachiid=NACHI22082510" target="_blank" rel="noreferrer"><img src="http://www.nachi.org/webseals/s-v2-NACHI22082510.gif" width="98" height="102" alt="Certified by the International Association of Certified Home Inspectors" border="0" /></a></p>
-                        <p><a href="https://www.nachi.org/verify?nachiid=NACHI22082510" target="_blank" rel="noreferrer"><img src="http://www.nachi.org/webseals/internachi-honor-guarantee.png?nachiid=NACHI22082510" width="170" height="170" alt="$10,000 Honor Guarantee, Backed by InterNACHI" border="0" /></a></p>
-                        <p>
-                        <img className="img" src="codeOfEthics.png" alt="" />
-                        <img className="img" src="interNachiQR.png" alt="" />
-                        <img className="img" src="standards.png" alt="" />
-                        </p>
-                        <p>
-                        <img className="img" src="roofData.png" alt="" />
-                        <img className="img" src="OSHA-30.jpg" alt="" />
-                        </p>
-                    </center>
+                                <center>
+                    <div className="certImg">
+                        <Grid fluid>
+                            <Row>
+                                <Col xs={64} sm={64} md={24}><a href="https://www.nachi.org/verify?nachiid=NACHI22082510" target="_blank" rel="noreferrer"><img src="http://www.nachi.org/webseals/s-v2-NACHI22082510.gif" width="98" height="102" alt="Certified by the International Association of Certified Home Inspectors" border="0" /></a></Col>
+                            </Row>
+                               
+                            <Row>
+                                <Col xs={64} sm={64} md={24}><a href="https://www.nachi.org/verify?nachiid=NACHI22082510" target="_blank" rel="noreferrer"><img src="http://www.nachi.org/webseals/internachi-honor-guarantee.png?nachiid=NACHI22082510" width="170" height="170" alt="$10,000 Honor Guarantee, Backed by InterNACHI" border="0" /></a></Col>
+                            </Row>
+                            <Row>
+                            <Col xs={64} sm={64} md={24}><img className="img" src="codeOfEthics.png" alt="" /></Col>
+                            <Col xs={64} sm={64} md={24}><img className="img" src="interNachiQR.png" alt="" /></Col>
+                            <Col xs={64} sm={64} md={24}><img className="img" src="standards.png" alt="" /></Col>
+                            </Row>
+
+<Row>
+<Col xs={64} sm={64} md={24}><img className="img" src="roofData.png" alt="" /></Col>
+<Col xs={64} sm={64} md={24}><img className="img" src="OSHA-30.jpg" alt="" /></Col>
+                            </Row>
+                        </Grid>
+                    </div>
+                            </center>
 
                 </Panel>
             </Panel>

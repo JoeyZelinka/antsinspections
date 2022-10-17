@@ -42,7 +42,7 @@ export default function BodyPanels() {
                         <Col xs={24} sm={24} md={8}>
                             <Panel shaded className="inspectorPanel" bordered style={{ width: 350 }} bodyfill>
                                 <h2>Meet Your Inspector</h2>
-                                <Whisper placement="top" trigger="hover" controlId="control-id-hover" speaker={speaker}>
+                                <Whisper placement="right" trigger="hover" controlId="control-id-hover" speaker={speaker}>
                                     <img className="anthony" src="anthony.png" alt="" />
                                 </Whisper>
                                 <p className="bio">Anthony is an InterNACHI Certified Professional Inspector who has resided in the Atlanta area since 2016. Starting at a young age, Ant developed a passion for construction in various specialties such as building boat docks, remodeling homes, concrete work, and commercial renovation projects. For over a decade, Ant worked in under ground tunnel mining and has been an integral part of major infrastructure projects that have served the communities in Dallas, Austin and Atlanta. He is known for his strong work ethic, dedication to his craft, and his widely versed knowledge of a variety of aspects of both home and commercial construction. He is a family man with a wife and 3 children; his hobbies include cooking and riding his motorcycle in his free time.</p>
