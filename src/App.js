@@ -62,10 +62,10 @@ function App() {
           <BodyPanels />
         </div>
 
-        {/* <footer>
+        <footer>
 
       <CertsModal/>
-        </footer> */}
+        </footer>
 
 
       </div >
