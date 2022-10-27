@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import { Col, Grid, Nav, Navbar, Panel, Row } from 'rsuite';
 import './App.css';
@@ -34,14 +35,18 @@ function App() {
       <Navbar className="navbar">
 
         <Nav>
-
           <Nav.Item onClick={() => handleOpenReqInspect('full')}>Request an Inspection!</Nav.Item>
           <Nav.Item>Flying Ant Drone (Coming Soon!)</Nav.Item>
           <Nav.Item><h6><b>Phone:</b> 770-282-1566</h6></Nav.Item>
-
+          
         </Nav>
-
+        <Nav className="social">
+          <Nav.Item href="https://www.facebook.com/AntsInspections" target="_blank" rel="noreferrer"><i class="fa-brands fa-square-facebook fa-2xl"></i></Nav.Item>
+          <Nav.Item href="https://www.instagram.com/antsinspections/" target="_blank" rel="noreferrer"><i class="fa-brands fa-square-instagram fa-2xl"></i></Nav.Item>
+          <Nav.Item href="https://www.linkedin.com/company/antsinspections/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin fa-2xl"></i></Nav.Item>
+          </Nav>
       </Navbar>
+       
       <div >
         <Panel className="bottomBar">
           <Grid fluid>
