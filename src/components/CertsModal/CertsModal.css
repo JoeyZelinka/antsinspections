@@ -1,6 +1,7 @@
 .img {
     width: 300px;
     height: 300px;
+    padding-top: 20px;
 }
 
 .certs {
@@ -9,4 +10,8 @@
 
 .certImg {
     padding-top: 25px;
+  }
+
+  .internachis {
+    padding-bottom: 25px;
   }
